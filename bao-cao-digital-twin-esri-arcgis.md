@@ -46,19 +46,11 @@
 
 ### ⚡ Tóm tắt nhanh
 
-> [!IMPORTANT]
-> 1. **Vấn đề cốt lõi:** đặt dữ liệu tòa nhà, tài sản và dữ liệu thời gian thực lên một nền bản đồ/GIS chung để xem, phân tích, chia sẻ. Trang Indoors mô tả sản phẩm là phần mềm lập bản đồ trong nhà cho quản lý không gian và tòa nhà ([1](https://esri.com/en-us/arcgis/products/arcgis-indoors/overview)); trang Enterprise nêu bản đồ 2D/3D và digital twin phục vụ lập kịch bản ([2](https://esri.com/en-us/arcgis/products/arcgis-enterprise/overview)).
-> 2. **Chiến lược tiếp cận:** một nền GIS dùng chung, triển khai theo hai hướng: ArcGIS Enterprise tự lưu trữ (tại chỗ, đám mây, Kubernetes) ([2](https://esri.com/en-us/arcgis/products/arcgis-enterprise/overview)) và ArcGIS Online dạng dịch vụ tính theo credit ([3](https://www.esri.com/en-us/arcgis/products/credits/overview)), mở rộng bằng các extension và ứng dụng.
-> 3. **Công thức cấu trúc giải pháp:** *Nhận định (Mức C):* nạp/chuẩn hóa (ArcGIS Pro, Indoors, Reality Studio, Velocity) → nền GIS (Enterprise hoặc Online) → ứng dụng (Dashboards, Experience Builder, Field Maps, ứng dụng Indoors) + tích hợp Maximo cho tài sản.
-> 4. **Khoảng trống:** chưa thấy sản phẩm mô phỏng luồng đám đông; chức năng đếm đám đông của giải pháp sự kiện đã bị gỡ ([4](https://doc.arcgis.com/en/arcgis-solutions/reference/introduction-to-special-event-operations.htm)). Chưa thấy ontology kiểu DTDL hay Brick, và chưa thấy phần cứng cảm biến do hãng cung cấp trong nguồn đã đọc.
-> 5. **Sân vận động:** chưa thấy sân nào có nguồn độc lập. Ví dụ gần nhất là Gillette Stadium, do đối tác tư vấn đăng, nói ArcGIS Online là một trong nhiều đích nhận dữ liệu ([5](https://www.symetri.us/insights/cases/the-kraft-group/)).
-
-| 💪 Mạnh | ⚠️ Chưa có |
-|---|---|
-| Đọc trực tiếp Revit và IFC vào GIS ([6](https://doc.esri.com/en/arcgis-pro/latest/help/data/revit/what-is-bim-data-.html)) | Mô phỏng đám đông và thoát hiểm (chưa thấy) |
-| Chuẩn mở cho 3D và dịch vụ: I3S, 3D Tiles, OGC API – Features, WFS ([7](https://www.esri.com/arcgis-blog/products/arcgis-online/3d-gis/i3s-or-3d-tiles-what-data-source-to-use-for-3d-layer-in-arcgis)), ([8](https://doc.esri.com/en/arcgis-enterprise/latest/share/ogc.html)) | Giá công khai bằng tiền cho Indoors, Urban, Enterprise, Reality Studio ([1](https://esri.com/en-us/arcgis/products/arcgis-indoors/overview)), ([9](https://esri.com/en-us/arcgis/products/arcgis-urban/buy)), ([2](https://esri.com/en-us/arcgis/products/arcgis-enterprise/overview)), ([10](https://esri.com/en-us/arcgis/products/arcgis-reality/products/arcgis-reality-studio)) |
-| Tích hợp chính thức với IBM Maximo ([11](https://www.esri.com/about/newsroom/announcements/esris-arcgis-enterprise-on-kubernetes-integrated-with-ibm-maximo-is-now-available)), ([12](https://architecture.arcgis.com/en/framework/architecture-pillars/integration/providers/ibm.html)) | Dự án sân vận động có nguồn độc lập |
-| Hoạt động ngoại tuyến ở Enterprise, Velocity, Field Maps ([2](https://esri.com/en-us/arcgis/products/arcgis-enterprise/overview)), ([13](https://doc.esri.com/en/arcgis-velocity/latest/reference/faq.html)), ([14](https://doc.esri.com/en/field-maps/get-started/get-started.htm)) | Ontology tòa nhà và quản lý thiết bị IoT là sản phẩm riêng (chưa thấy) |
+1. **Nền tảng ArcGIS:** đặt dữ liệu tòa nhà, tài sản và dữ liệu thời gian thực lên một nền bản đồ/GIS chung để xem, phân tích, chia sẻ. Trang Indoors mô tả sản phẩm là phần mềm lập bản đồ trong nhà cho quản lý không gian và tòa nhà ([1](https://esri.com/en-us/arcgis/products/arcgis-indoors/overview)); trang Enterprise nêu bản đồ 2D/3D và digital twin phục vụ lập kịch bản ([2](https://esri.com/en-us/arcgis/products/arcgis-enterprise/overview)).
+2. **Chiến lược tiếp cận:** một nền GIS dùng chung, triển khai theo hai hướng: ArcGIS Enterprise tự lưu trữ (tại chỗ, đám mây, Kubernetes) ([2](https://esri.com/en-us/arcgis/products/arcgis-enterprise/overview)) và ArcGIS Online dạng dịch vụ tính theo credit ([3](https://www.esri.com/en-us/arcgis/products/credits/overview)), mở rộng bằng các extension và ứng dụng.
+3. **Công thức cấu trúc giải pháp:** *Nhận định (Mức C):* nạp/chuẩn hóa (ArcGIS Pro, Indoors, Reality Studio, Velocity) → nền GIS (Enterprise hoặc Online) → ứng dụng (Dashboards, Experience Builder, Field Maps, ứng dụng Indoors) + tích hợp Maximo cho tài sản.
+4. **Khoảng trống:** chưa thấy sản phẩm mô phỏng luồng đám đông; chức năng đếm đám đông của giải pháp sự kiện đã bị gỡ ([4](https://doc.arcgis.com/en/arcgis-solutions/reference/introduction-to-special-event-operations.htm)). Chưa thấy ontology kiểu DTDL hay Brick, và chưa thấy phần cứng cảm biến do hãng cung cấp trong nguồn đã đọc.
+5. **Sân vận động:** chưa thấy sân nào có nguồn độc lập. Ví dụ gần nhất là Gillette Stadium, do đối tác tư vấn đăng, nói ArcGIS Online là một trong nhiều đích nhận dữ liệu ([5](https://www.symetri.us/insights/cases/the-kraft-group/)).
 
 ---
 
