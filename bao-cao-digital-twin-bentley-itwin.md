@@ -33,12 +33,6 @@ Nhằm bảo đảm tính khách quan và khả năng so sánh nhất quán vớ
 | 🔵 **Mức B** | **Bằng chứng tài liệu chính thức** | Tài liệu kỹ thuật, thông cáo báo chí, bài thuyết trình hoặc tài liệu đào tạo chính thức do Bentley công bố. | ✅ **Đã đối chiếu** |
 | 🟠 **Mức C** | **Suy luận chuyên môn / gián tiếp** | Báo cáo bên thứ ba chưa được Bentley xác nhận, hoặc suy luận logic nội bộ của nhóm nghiên cứu. | 📝 **Đã ghi nhận** |
 
-```mermaid
-pie showData title Cơ cấu 28 nguồn tham khảo theo mức bằng chứng (Mức A = 0 nguồn)
-    "🔵 Mức B – tài liệu chính thức" : 22
-    "🟠 Mức C – suy luận / gián tiếp" : 6
-```
-
 ---
 
 ## 1️⃣ Thông tin cần biết về Bentley iTwin Digital Twin
