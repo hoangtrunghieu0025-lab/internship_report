@@ -145,12 +145,14 @@ Khả năng mở và chuẩn hóa dữ liệu dựa trên **4 trụ cột** `[B]
 | 🏷️ Tag / Release | **Named Version** | Mốc duyệt thiết kế đóng băng, mở lại đúng trạng thái đã duyệt `[15]` |
 
 ```mermaid
-gitGraph
-    commit id: "Changeset 1: dựng kết cấu"
-    commit id: "Changeset 2: thêm MEP"
-    commit id: "Changeset 3: sửa khán đài" tag: "Named Version: Duyệt TK cơ sở"
-    commit id: "Changeset 4: cập nhật mái"
-    commit id: "Changeset 5: chỉnh lối thoát" tag: "Named Version: Duyệt thi công"
+flowchart LR
+    C1["Changeset 1<br/>Dựng kết cấu"] --> C2["Changeset 2<br/>Thêm MEP"]
+    C2 --> C3["Changeset 3<br/>Sửa khán đài"]
+    C3 --> C4["Changeset 4<br/>Cập nhật mái"]
+    C4 --> C5["Changeset 5<br/>Chỉnh lối thoát"]
+
+    V1["🏷️ Named Version:<br/><b>Duyệt TK cơ sở</b>"] -.-> C3
+    V2["🏷️ Named Version:<br/><b>Duyệt thi công</b>"] -.-> C5
 ```
 
 > [!NOTE]
