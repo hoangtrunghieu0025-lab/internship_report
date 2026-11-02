@@ -11,15 +11,27 @@
 
 ---
 
-## 🧭 Mục lục
+## 📑 Mục lục
 
-| # | Phần | Nội dung chính |
-|:-:|------|----------------|
-| 📏 | [Quy chuẩn bằng chứng](#-quy-chuẩn-đánh-giá-mức-độ-bằng-chứng-a--b--c) | Thang A – B – C |
-| 1️⃣ | [Thông tin cần biết](#1️⃣-thông-tin-cần-biết-về-bentley-itwin-digital-twin) | Tóm tắt, nền tảng, sản phẩm, iModel, khung 5 tầng |
-| 2️⃣ | [Đánh giá chuyên sâu](#2️⃣-đánh-giá-chuyên-sâu) | Mức tự chủ, Maturity, chi phí, dự án thực tế |
-| 3️⃣ | [Kết luận chung](#3️⃣-kết-luận-chung) | Sẵn sàng theo vòng đời, ngày sự kiện, điểm nghẽn |
-| 📚 | [Tài liệu tham khảo](#-danh-mục-tài-liệu-tham-khảo) | 28 nguồn (22 Mức B, 6 Mức C) |
+- [📏 Quy chuẩn đánh giá mức độ bằng chứng (A – B – C)](#-quy-chuẩn-đánh-giá-mức-độ-bằng-chứng-a--b--c)
+- [1️⃣ 1. Thông tin cần biết về Bentley iTwin Digital Twin](#1️⃣-thông-tin-cần-biết-về-bentley-itwin-digital-twin)
+  - [⚡ Tóm tắt nhanh](#-tóm-tắt-nhanh)
+  - [🧱 1.1. Nền tảng Bentley](#11--nền-tảng-bentley)
+    - [Composable Ecosystem thay vì Monolithic Application](#composable-ecosystem-thay-vì-monolithic-application-b)
+    - [Lớp nền tảng mới: Bentley Infrastructure Cloud Connect (2025)](#️-lớp-nền-tảng-mới-bentley-infrastructure-cloud-connect-2025-b)
+  - [🧰 1.2. Các sản phẩm chủ lực](#12--các-sản-phẩm-chủ-lực-b)
+    - [1.2.1. Cấu trúc dữ liệu làm việc và cơ chế Changeset Ledger](#121-️-cấu-trúc-dữ-liệu-làm-việc-và-cơ-chế-changeset-ledger-b)
+    - [1.2.2. Khung phối công nghệ 5 tầng](#122-️-khung-phối-công-nghệ-5-tầng)
+- [2️⃣ 2. Đánh giá chuyên sâu](#2️⃣-đánh-giá-chuyên-sâu)
+  - [2.1. So sánh đối chiếu 5 tầng: mức độ tự chủ của Bentley](#21-️-so-sánh-đối-chiếu-5-tầng-mức-độ-tự-chủ-của-bentley)
+  - [2.2. Đánh giá mức độ trưởng thành (Maturity Level)](#22--đánh-giá-mức-độ-trưởng-thành-maturity-level)
+  - [2.3. Cấu trúc chi phí](#23--cấu-trúc-chi-phí)
+  - [2.4. Đánh giá qua các dự án thực tế](#24-️-đánh-giá-qua-các-dự-án-thực-tế-bc)
+- [3️⃣ 3. Kết luận chung](#3️⃣-kết-luận-chung)
+  - [3.1. Mức độ sẵn sàng theo giai đoạn vòng đời dự án sân vận động](#31-️-mức-độ-sẵn-sàng-theo-giai-đoạn-vòng-đời-dự-án-sân-vận-động-c)
+  - [3.2. Vận hành lưỡng cực: Ngày sự kiện và Ngày bình thường](#32-️-vận-hành-lưỡng-cực-ngày-sự-kiện-và-ngày-bình-thường-c)
+  - [3.3. Điểm nghẽn: phụ thuộc đám mây và thiếu dự phòng ngoại tuyến](#33--điểm-nghẽn-phụ-thuộc-đám-mây-và-thiếu-dự-phòng-ngoại-tuyến-c)
+- [📚 Danh mục tài liệu tham khảo](#-danh-mục-tài-liệu-tham-khảo)
 
 ---
 
@@ -159,29 +171,18 @@ Khung 5 tầng của báo cáo lấy ý tưởng từ 4 miền chức năng củ
 
 ##### Sơ đồ khung 5 tầng và sản phẩm Bentley
 
-```mermaid
-flowchart TB
-    T5["<b>T5 · Trực quan hóa & Điều hành (IOC)</b><br/>🥽 iTwin Experience · 🎮 iTwin Engage · 🌐 CesiumJS · iTwin.js"]
-    T4["<b>T4 · Module nghiệp vụ chuyên dụng</b><br/>👥 LEGION · 🏗️ SYNCHRO · 🛠️ AssetWise · 🤖 OpenSite+ / Copilot"]
-    T3["<b>T3 · Core nền tảng & dữ liệu</b><br/>☁️ iTwin Platform APIs · 🗃️ iModel · Changeset Ledger"]
-    T2["<b>T2 · Thu nạp & chuẩn hóa dữ liệu</b><br/>🔄 Synchronization API · 🌐 Cesium ion · 📸 iTwin Capture · 📂 ProjectWise"]
-    T1["<b>T1 · Hạ tầng vật lý & biên</b><br/>📷 Cảm biến · Camera · BMS · Cổng soát vé  <i>(đối tác cung cấp)</i>"]
-
-    T1 ==>|"dữ liệu thô"| T2
-    T2 ==>|"chuẩn hóa"| T3
-    T3 ==>|"mô hình số"| T4
-    T4 ==>|"kết quả"| T5
-
-    classDef t1 fill:#f3f4f6,stroke:#6b7280,color:#111827
-    classDef t2 fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef t3 fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
-    classDef t4 fill:#fef3c7,stroke:#d97706,color:#78350f
-    classDef t5 fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class T1 t1
-    class T2 t2
-    class T3 t3
-    class T4 t4
-    class T5 t5
+```text
+ T5  Trực quan hóa & Điều hành (IOC)   iTwin Experience · iTwin Engage · CesiumJS · iTwin.js
+  ▲
+  │  T4  Module nghiệp vụ chuyên dụng   LEGION · SYNCHRO · AssetWise · OpenSite+ / Copilot
+  │
+  │  T3  Core nền tảng & dữ liệu       iTwin Platform APIs · iModel · Changeset Ledger
+  │
+  │  T2  Thu nạp & chuẩn hóa dữ liệu   Synchronization API · Cesium ion · iTwin Capture · ProjectWise
+  │
+  │  T1  Hạ tầng vật lý & biên         Cảm biến · Camera · BMS · Cổng soát vé (đối tác cung cấp)
+  
+  ▲  Dữ liệu chảy từ Tầng 1 (Vật lý) lên Tầng 5 (Điều hành IOC)
 ```
 
 ##### Ánh xạ với ISO 23247-2 `[C]`
