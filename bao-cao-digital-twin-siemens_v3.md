@@ -171,18 +171,15 @@ Siemens Advanta là đơn vị tư vấn chuyển đổi số và phát triển 
 Để có hệ quy chiếu đánh giá khách quan, báo cáo dùng Khung kiến trúc tham chiếu của một Nền tảng Digital Twin hoàn chỉnh (theo chuẩn *Digital Twin Consortium*, *Gartner* và các nền tảng tham chiếu như *Azure Digital Twins*, *Bentley iTwin*).
 
 ```mermaid
-flowchart BT
-    T1["<b>T1: Kết nối & Thu thập IoT</b><br/><small>BACnet, Modbus, MQTT, OPC-UA</small>"]
-    T2["<b>T2: Không gian & Bản thể</b><br/><small>BIM, GIS, Semantic Graph</small>"]
-    T3["<b>T3: Vòng đời & Quản lý tài sản</b><br/><small>CMMS, EAM, Work Orders</small>"]
-    T4["<b>T4: Phân tích & Trí tuệ AI</b><br/><small>Tối ưu năng lượng, FDD, dự báo</small>"]
-    T5["<b>T5: Trực quan hóa (UI/UX)</b><br/><small>Dashboard 2D, Viewer 3D, Mobile App</small>"]
-    T6["<b>T6: Nền tảng phát triển mở</b><br/><small>SDK, Open API, Graph Query, PaaS mở</small>"]
-
-    T1 --> T2 --> T3 --> T4 --> T5 --> T6
+flowchart LR
+    T1["<b>T1: Thu thập IoT</b><br/><small>BACnet, Modbus, MQTT</small>"] --> T2["<b>T2: Không gian & BIM</b><br/><small>BIM, GIS, Semantic</small>"]
+    T2 --> T3["<b>T3: Quản lý tài sản</b><br/><small>CMMS, EAM, Bảo trì</small>"]
+    T3 --> T4["<b>T4: Phân tích & AI</b><br/><small>Năng lượng, FDD, Dự báo</small>"]
+    T4 --> T5["<b>T5: Trực quan hóa</b><br/><small>Dashboard 2D, 3D Viewer</small>"]
+    T5 --> T6["<b>T6: Nền tảng mở</b><br/><small>REST API, Low-code, SDK</small>"]
 ```
 
-> *Dữ liệu chảy từ Tầng 1 lên Tầng 6; mỗi tầng dựa vào tầng dưới nó.*
+> *Dữ liệu chảy từ Tầng 1 (Thu thập IoT) tuần tự qua các tầng nghiệp vụ đến Tầng 6 (Nền tảng mở).*
 
 Siemens mạnh ở T1 và T3, phụ thuộc đối tác phát triển ở T2 và T5, và **không có DTP mở ở T6**. Bảng dưới soi chiếu các cấu phần Siemens vào Khung 6 tầng DTP chuẩn:
 
