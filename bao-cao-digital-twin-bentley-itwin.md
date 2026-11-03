@@ -107,6 +107,8 @@ Tại Year in Infrastructure 2025, Bentley ra mắt **Bentley Infrastructure Clo
 
 ### 1.2. 🧰 Các sản phẩm chủ lực `[B]`
 
+Cột "Tầng" (T1–T5) là đối chiếu của nhóm theo khung 5 tầng ở [mục 1.2.2](#122-️-khung-phối-công-nghệ-5-tầng) `[C]`.
+
 | Sản phẩm | Chức năng kỹ thuật cốt lõi | Đầu vào → Đầu ra | Tầng | Mức |
 |----------|----------------------------|------------------|:----:|:---:|
 | ☁️ **iTwin Platform** `[1]` | PaaS đám mây; REST APIs & microservices để xây ứng dụng Digital Twin; bảo mật, hợp nhất dữ liệu | CAD/BIM, dữ liệu quét, IoT → môi trường phát triển "iTwin Enabled" (không có giao diện dựng sẵn) | T2–T3 | 🔵 B |

@@ -70,7 +70,7 @@ flowchart LR
 
 ### 🗺️ 1.2. Bản đồ sản phẩm
 
-Cột "Tầng" là đối chiếu của nhóm (Mức C).
+Cột "Tầng" (T1–T5) là đối chiếu của nhóm theo khung 5 tầng ở [mục 1.4](#️-14-khung-tham-chiếu-5-tầng) (Mức C).
 
 | Thành phần | Làm gì | Dữ liệu vào | Kết quả ra | Tầng (🟠 Mức C) |
 |---|---|---|---|---|
