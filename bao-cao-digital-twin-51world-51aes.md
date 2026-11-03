@@ -1,11 +1,14 @@
 # 🌐 Báo cáo Digital Twin 51WORLD
 
-📅 Cập nhật: 03/11/2026 | ✍️ Tác giả: Hoàng Trung Hiếu | 🔖 Phiên bản: 1.0
-
-🏷️ Chủ đề: Đánh giá năng lực công nghệ và khảo sát thực tế 51WORLD (51Aes) cho bản sao số tòa nhà, khuôn viên, công trình phức hợp (sân vận động)
+> 📅 **Cập nhật:** 03/11/2026  |  ✍️ **Tác giả:** Hoàng Trung Hiếu  |  🔖 **Phiên bản:** 1.0  
+> 🏷️ **Chủ đề:** Đánh giá năng lực công nghệ và khảo sát thực tế 51WORLD (51Aes) cho bản sao số tòa nhà, khuôn viên, công trình phức hợp (sân vận động)
 
 > [!NOTE]
-> **Phạm vi nghiên cứu.** Báo cáo chỉ đánh giá 51WORLD (thương hiệu digital twin 51Aes và các giải pháp đi kèm), không so sánh với hãng khác. Việc so sánh nhiều hãng thuộc Báo cáo 1 (tài liệu nội bộ của nhóm). Nguồn chính là trang chính thức của hãng, phần lớn bằng tiếng Trung; phần dịch trong báo cáo là bản tự dịch.
+> **Đối tượng đánh giá:** Nền tảng 51Aes (AES6, WDP) và các giải pháp ngành CIM, AIM. Các mảng robot và xe tự lái (AperOne, SimOne) chỉ liệt kê, không đánh giá.  
+> **Nguồn chính:** Trang chính thức của hãng, tài liệu API, sổ tay WDP5 và báo cáo giữa niên độ trên HKEX.  
+> **Lưu ý:** Phần lớn nguồn bằng tiếng Trung; nội dung trích trong báo cáo do nhóm tự dịch.
+
+---
 
 ## 📑 Mục lục
 

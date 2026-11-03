@@ -1,10 +1,11 @@
 # 🏙️ Báo cáo Digital Twin Siemens
 
-> 📅 **Cập nhật:** 02/11/2026  |  ✍️ **Tác giả:** Hoàng Trung Hiếu  
-> 🏷️ **Chủ đề:** Đánh giá năng lực công nghệ & Khảo sát thực tế hệ sinh thái Digital Twin Siemens
+> 📅 **Cập nhật:** 02/11/2026  |  ✍️ **Tác giả:** Hoàng Trung Hiếu  |  🔖 **Phiên bản:** 3.0  
+> 🏷️ **Chủ đề:** Đánh giá năng lực công nghệ và khảo sát thực tế hệ sinh thái Siemens cho bản sao số tòa nhà, khuôn viên, công trình phức hợp (sân vận động)
 
 > [!NOTE]
-> **Phạm vi nghiên cứu:** Đánh giá năng lực thực tế của Siemens trong bài toán Bản sao số (Digital Twin) cho Tòa nhà, Khuôn viên và Công trình phức hợp (Sân vận động).
+> **Đối tượng đánh giá:** Hệ sinh thái tòa nhà của Siemens: Building X, Desigo CC, Brightly và các đối tác Xcelerator (ioLabs, BizzTech, NavVis). Mảng công nghiệp (Teamcenter, NX, Digital Twin Composer) chỉ nêu để tham chiếu.  
+> **Nguồn chính:** Tài liệu chính thức của Siemens (cổng nhà phát triển, trang sản phẩm, thông cáo báo chí); báo cáo phân tích của Verdantix, Memoori.
 
 ---
 

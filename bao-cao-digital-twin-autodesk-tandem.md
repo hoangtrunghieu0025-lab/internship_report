@@ -2,11 +2,12 @@
 
 ![Platform](https://img.shields.io/badge/Platform-Autodesk%20Tandem-0696D7?style=for-the-badge&logo=autodesk&logoColor=white) ![Maturity](https://img.shields.io/badge/Maturity-Level%202%20%2F%205-orange?style=for-the-badge) ![Evidence](https://img.shields.io/badge/Evidence-B%20%2B%20C%20(chưa%20có%20A)-yellow?style=for-the-badge) ![Stadium](https://img.shields.io/badge/Stadium%20Ops-Chưa%20ghi%20nhận-lightgrey?style=for-the-badge)
 
-> 📅 **Cập nhật:** 02/11/2026  |  ✍️ **Tác giả:** Hoàng Trung Hiếu  |  🔖 **Phiên bản:** 2.0 (Đã thẩm định & Chuẩn hóa)  
-> 🏷️ **Chủ đề:** Đánh giá năng lực công nghệ & khảo sát thực tế nền tảng Digital Twin Autodesk Tandem  
+> 📅 **Cập nhật:** 02/11/2026  |  ✍️ **Tác giả:** Hoàng Trung Hiếu  |  🔖 **Phiên bản:** 2.0  
+> 🏷️ **Chủ đề:** Đánh giá năng lực công nghệ và khảo sát thực tế Autodesk Tandem cho bản sao số tòa nhà, khuôn viên, công trình phức hợp (sân vận động)
 
 > [!NOTE]
-> **Phạm vi nghiên cứu:** Đánh giá năng lực thực tế của Autodesk Tandem trong bài toán Bản sao số (Digital Twin) cho Tòa nhà, Khuôn viên và Công trình phức hợp (Sân vận động), theo cùng khung đánh giá đã dùng cho các nền tảng khác trong chuỗi khảo sát.
+> **Đối tượng đánh giá:** Autodesk Tandem (Facilities, Streams, Connect, Data API) và các khâu liên quan trong hệ sinh thái Autodesk (Revit, Autodesk Construction Cloud, Forma).  
+> **Nguồn chính:** Tài liệu chính thức của Autodesk và Autodesk Platform Services, các bài trình bày tại Autodesk University; báo cáo phân tích của Verdantix.
 
 ---
 

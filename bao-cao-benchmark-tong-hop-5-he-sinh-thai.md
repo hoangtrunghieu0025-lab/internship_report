@@ -4,7 +4,8 @@
 > 🏷️ **Chủ đề:** So sánh Siemens, Autodesk Tandem, Bentley iTwin, Esri ArcGIS và 51WORLD (51Aes) cho bài toán bản sao số khu công trình phức hợp (sân vận động)
 
 > [!NOTE]
-> **Nguồn dữ liệu:** Báo cáo này **không thu thập thêm bằng chứng mới**. Toàn bộ dữ kiện lấy từ 5 báo cáo riêng của từng hãng trong repo, nguồn được ghi theo ký hiệu:
+> **Đối tượng đánh giá:** 5 hệ sinh thái đã khảo sát riêng, so sánh trên cùng 9 tiêu chí (mục 1).  
+> **Nguồn chính:** 5 báo cáo riêng trong repo; báo cáo này không thu thập thêm bằng chứng mới. Ký hiệu nguồn:
 > **[SIE]** [Siemens](bao-cao-digital-twin-siemens_v3.md) · **[ADK]** [Autodesk Tandem](bao-cao-digital-twin-autodesk-tandem.md) · **[BEN]** [Bentley iTwin](bao-cao-digital-twin-bentley-itwin.md) · **[ESR]** [Esri ArcGIS](bao-cao-digital-twin-esri-arcgis.md) · **[51W]** [51WORLD](bao-cao-digital-twin-51world-51aes.md).  
 > Đường dẫn tới tài liệu gốc của hãng xem trong từng báo cáo riêng.
 

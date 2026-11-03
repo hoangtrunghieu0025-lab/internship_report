@@ -1,13 +1,11 @@
-<div align="center">
+# 🏟️ Báo cáo Digital Twin Bentley iTwin
 
-# 🏟️ Bentley iTwin Digital Twin
+> 📅 **Cập nhật:** 03/11/2026  |  ✍️ **Tác giả:** Hoàng Trung Hiếu  |  🔖 **Phiên bản:** 1.0  
+> 🏷️ **Chủ đề:** Đánh giá năng lực công nghệ và khảo sát thực tế Bentley iTwin cho bản sao số tòa nhà, khuôn viên, công trình phức hợp (sân vận động)
 
-### Báo cáo thẩm định chiến lược & kiến trúc kỹ thuật
-**Phân tích sâu nền tảng Bentley iTwin cho dự án sân vận động và công trình phức hợp**
-
-`🧩 Kiến trúc lắp ghép` · `🏗️ Khung 5 tầng` · `📊 Maturity` · `💰 Chi phí` · `🏟️ Al Thumama`
-
-</div>
+> [!NOTE]
+> **Đối tượng đánh giá:** iTwin Platform và các module ghép kèm: Cesium, iTwin Experience, iTwin IoT, iTwin Engage, LEGION, AssetWise, ProjectWise, SYNCHRO.  
+> **Nguồn chính:** Cổng nhà phát triển và trang sản phẩm của Bentley, sự kiện Year in Infrastructure 2025–2026; báo chí ngành (GeoWeek News, Engineering.com).
 
 ---
 

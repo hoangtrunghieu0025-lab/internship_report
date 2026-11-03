@@ -4,7 +4,9 @@
 > 🏷️ **Chủ đề:** Đánh giá năng lực công nghệ và khảo sát thực tế Esri (ArcGIS) cho bản sao số tòa nhà, khuôn viên, công trình phức hợp (sân vận động)
 
 > [!NOTE]
-> **Phạm vi nghiên cứu:** Báo cáo chỉ đánh giá Esri (ArcGIS), không so sánh hãng khác. Việc so sánh nhiều hãng thuộc Báo cáo 1 (tài liệu nội bộ). Quan hệ với IBM Maximo được nêu ở mục 2.6 đúng mức bằng chứng về tích hợp chính thức của Esri.
+> **Đối tượng đánh giá:** Nền ArcGIS (Enterprise, Online) và các ứng dụng, phần mở rộng liên quan: Indoors, IPS, Velocity, Reality Studio, CityEngine, Urban, Dashboards, Experience Builder, Field Maps.  
+> **Nguồn chính:** Trang sản phẩm, tài liệu nhà phát triển và thông cáo của Esri; nguồn bên thứ ba được gắn nhãn Mức C.  
+> **Lưu ý:** IBM Maximo chỉ được xét ở mức tích hợp chính thức với ArcGIS (mục 2.6).
 
 ---
 
