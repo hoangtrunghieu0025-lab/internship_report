@@ -32,7 +32,7 @@
 > 1. **Không hãng nào là giải pháp trọn gói** cho sân vận động. Cả 5 báo cáo đều đi đến kết luận này. Chưa hãng nào có sân vận động vận hành bằng digital twin tích hợp mà được nguồn độc lập xác nhận.
 > 2. **Xếp hạng (kịch bản chung, tính cả vòng đời dự án):** 🥇 **Bentley iTwin** (3,55) › 🥈 **Esri ArcGIS** (3,15) › 🥉 **Siemens** (3,05) › **51WORLD** (2,90) › **Autodesk Tandem** (2,80), thang điểm 5.
 > 3. **Thứ hạng thay đổi theo giai đoạn dự án:** với dự án **xây mới, chú trọng tổ chức sự kiện**, Bentley dẫn đầu cách biệt (4,10); với **sân đã có, cần vận hành**, **Siemens vươn lên số 1** (3,71).
-> 4. **Có thể và nên kết hợp nhiều hãng.** Mỗi hãng mạnh ở một tầng khác nhau nên gần như bổ sung cho nhau. Kiến trúc đề xuất: **Siemens (vận hành, BMS, tài sản) + Bentley iTwin (dữ liệu lõi, 3D, mô phỏng đám đông) + Esri ArcGIS (GIS khu vực quanh sân, dự phòng khi mất mạng)**. Siemens và Bentley đã từng làm chung tại dự án Siemensstadt Square [SIE].
+> 4. **Có thể và nên kết hợp nhiều hãng.** Mỗi hãng mạnh ở một tầng khác nhau nên gần như bổ sung cho nhau. Kiến trúc đề xuất: **Siemens (vận hành, BMS, tài sản) + Bentley iTwin (data core, 3D, mô phỏng đám đông) + Esri ArcGIS (GIS khu vực quanh sân, dự phòng khi mất mạng)**. Siemens và Bentley đã từng làm chung tại dự án Siemensstadt Square [SIE].
 > 5. Mọi điểm số là **đánh giá định tính Mức C**, dựa trên bằng chứng Mức B. **Chưa hãng nào có dữ kiện Mức A.**
 
 ```mermaid
@@ -74,7 +74,7 @@ flowchart LR
     subgraph K5["Khung 5 tầng (BEN, ESR, 51W)"]
         T1["T1 Thiết bị hiện trường"]
         T2["T2 Thu thập & chuẩn hóa"]
-        T3["T3 Dữ liệu lõi & mô phỏng"]
+        T3["T3 Data core & mô phỏng"]
         T4["T4 Module nghiệp vụ"]
         T5["T5 Hiển thị & điều hành"]
     end
@@ -179,7 +179,7 @@ quadrantChart
 | **C1** | Desigo CC, bộ điều khiển phần cứng, Cloud Gateway; hãng tự làm toàn bộ | iTwin IoT nhận dữ liệu qua MQTT, OPC-UA, CSV, API; không sản xuất thiết bị | Velocity nhận MQTT, Kafka, gRPC...; bản cho Enterprise chỉ chạy một máy; GeoEvent đang bị ngừng hỗ trợ | Streams, Connect, MQTT Broker (trả phí); phải dựa vào BMS của hãng khác | IOC nhận dữ liệu nhiều nguồn; **chưa thấy nêu giao thức** |
 | **C2** | Chưa thấy | **LEGION**: mô phỏng vào sân, giữa hiệp, sơ tán; đã dùng tại Al Thumama | Chưa thấy; chức năng đếm đám đông đã bị gỡ | Chưa hỗ trợ | **ACF** mô phỏng luồng người, **AIC** bố trí mặt bằng, sơ tán; chỉ có số liệu do hãng tự công bố |
 | **C3** | Lifecycle Twin (BIM, COBie, Revit); **không thấy hỗ trợ IFC**; 3D phải nhờ NavVis, BizzTech | IFC 2x3 đến 4.3, hơn 50 định dạng, iModel lưu lịch sử thay đổi | Đọc được Revit, IFC2x3 đến IFC4x3 nhưng **chỉ đọc**, chỉ lấy mô hình chính | Đọc trực tiếp Revit và IFC; trình xem 3D rất mạnh | RVT, FBX, OSGB, 3DGS; **chưa thấy hỗ trợ IFC** |
-| **C4** | Geometry API chỉ nhận GeoJSON 2D; GIS phải nhờ đối tác | Cesium, 3D Tiles (chuẩn OGC), hiển thị được lớp bản đồ ArcGIS, WMS | GIS là sản phẩm lõi: I3S, 3D Tiles, OGC API; có Urban, CityEngine | **Chưa có GIS tích hợp sẵn** | 3D Tiles, mô hình đô thị "2000 km²"; chưa thấy chuẩn OGC |
+| **C4** | Geometry API chỉ nhận GeoJSON 2D; GIS phải nhờ đối tác | Cesium, 3D Tiles (chuẩn OGC), hiển thị được lớp bản đồ ArcGIS, WMS | GIS là sản phẩm core: I3S, 3D Tiles, OGC API; có Urban, CityEngine | **Chưa có GIS tích hợp sẵn** | 3D Tiles, mô hình đô thị "2000 km²"; chưa thấy chuẩn OGC |
 | **C5** | **Brightly** (phần mềm bảo trì CMMS/EAM, mua lại với giá 1,575 tỷ USD) | AssetWise APM; phần mềm bảo trì phải tích hợp từ bên ngoài | Tích hợp chính thức với IBM Maximo | Danh mục thiết bị, phiếu công việc (Beta), plugin Maximo, Eptura | Mới chỉ nêu tên chức năng; chưa thấy phần mềm bảo trì |
 | **C6** | REST API, Mendix; **không có nền tảng mở để tự dựng twin**; giới hạn 6 triệu lượt gọi API/năm | iTwin.js mã nguồn mở, REST API, máy chủ MCP | Maps SDK, REST, chuẩn OGC | Tandem Data API (thuộc APS), OAuth | JS SDK hơn 300 hàm, MCP; phải xin token qua bộ phận kinh doanh |
 | **C7** | BMS đặt tại chỗ, chạy độc lập; Building X chạy trên đám mây | **Chỉ chạy trên đám mây**, chưa công bố chế độ offline | Enterprise, Velocity chạy được không cần Internet; Field Maps dùng offline | SaaS; Connect Outpost chạy trong mạng nội bộ | Triển khai được trên hạ tầng riêng; bản Lite chạy offline trên một máy, cập nhật dữ liệu thủ công |
@@ -198,7 +198,7 @@ flowchart TB
         direction LR
         a4["Siemens 🟩 tài sản, năng lượng"] ~~~ b4["Bentley 🟩 đám đông"] ~~~ c4["51WORLD 🟢 đám đông"] ~~~ d4["Esri 🟨"] ~~~ e4["Tandem 🟧"]
     end
-    subgraph T3["T3 Dữ liệu lõi & mô phỏng"]
+    subgraph T3["T3 Data core & mô phỏng"]
         direction LR
         a3["Bentley 🟢 iModel"] ~~~ b3["Esri 🟢 GIS"] ~~~ c3["51WORLD 🟢 AES6"] ~~~ d3["Tandem 🟨"] ~~~ e3["Siemens 🟧"]
     end
@@ -351,7 +351,7 @@ flowchart LR
 
 | Hạng | Hãng | Điểm | Vai trò phù hợp nhất | Lý do chính |
 |:---:|---|:---:|---|---|
-| 🥇 **1** | **Bentley iTwin** | **3,55** | **Dữ liệu lõi & 3D, mô phỏng đám đông** | Mạnh nhất về IFC, gộp dữ liệu từ nhiều nguồn, 3D Tiles/Cesium, nền tảng mở; là hãng duy nhất có mô phỏng đám đông đã dùng thật ở sân vận động (Al Thumama). Điểm yếu lớn nhất: **chỉ chạy trên đám mây** và không có thiết bị hiện trường |
+| 🥇 **1** | **Bentley iTwin** | **3,55** | **Data core & 3D, mô phỏng đám đông** | Mạnh nhất về IFC, gộp dữ liệu từ nhiều nguồn, 3D Tiles/Cesium, nền tảng mở; là hãng duy nhất có mô phỏng đám đông đã dùng thật ở sân vận động (Al Thumama). Điểm yếu lớn nhất: **chỉ chạy trên đám mây** và không có thiết bị hiện trường |
 | 🥈 **2** | **Esri ArcGIS** | **3,15** | **GIS khu vực quanh sân & dự phòng khi mất mạng** | GIS tốt nhất cho giao thông, bãi xe, quảng trường; chạy được khi không có Internet; tích hợp chính thức với Maximo. Thiếu mô phỏng đám đông |
 | 🥉 **3** | **Siemens** | **3,05** | **Vận hành tòa nhà, BMS, năng lượng, tài sản** | Hãng duy nhất tự cung cấp thiết bị hiện trường, có phần mềm bảo trì mạnh (Brightly), nhiều sân vận động đang dùng BMS của hãng. Không phải nền tảng để tự dựng twin; yếu về 3D và GIS |
 | **4** | **51WORLD** | **2,90** | Màn hình điều hành 3D, mô phỏng sự kiện *(phương án thay thế)* | Dựng hình 3D quy mô lớn, có ACF/AIC cho sự kiện, chạy được offline. Nhưng dùng định dạng riêng, không hỗ trợ IFC, không công bố giá, chưa thấy hỗ trợ ngoài Trung Quốc |
@@ -414,7 +414,7 @@ flowchart TB
         M2["⚡ Building X Energy, Operations<br/>(Siemens)"]
         M3["🛠️ Brightly<br/>(Siemens) hoặc Maximo"]
     end
-    subgraph L3["T3 · Dữ liệu lõi"]
+    subgraph L3["T3 · Data core"]
         D1["🧩 iTwin Platform, iModel<br/>(Bentley): BIM, IFC, 3D"]
         D2["🗺️ ArcGIS Enterprise<br/>(Esri): GIS quanh sân"]
     end
