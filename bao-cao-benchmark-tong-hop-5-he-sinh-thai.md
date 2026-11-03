@@ -34,7 +34,7 @@
 > 2. **Hãng phù hợp nhất phụ thuộc giai đoạn dự án** (mục 4). Với **sân đã có, cần vận hành**, chọn **Siemens**: đây là hãng duy nhất mạnh cả ba mặt BMS, bảo trì và chạy tại chỗ. Với dự án **xây mới, chú trọng tổ chức sự kiện**, chọn **Bentley iTwin**: đây là hãng duy nhất mạnh cả mô phỏng đám đông, IFC và GIS 3D.
 > 3. **Esri ArcGIS** là lớp bổ trợ hợp lý trong cả hai trường hợp, nhờ GIS khu vực quanh sân và khả năng chạy không cần Internet. **Autodesk Tandem** và **51WORLD** chỉ nên dùng làm phương án thay thế cho từng phần.
 > 4. **Có thể và nên kết hợp nhiều hãng.** Mỗi hãng mạnh ở một tầng khác nhau nên gần như bổ sung cho nhau. Kiến trúc đề xuất: **Siemens (vận hành, BMS, tài sản) + Bentley iTwin (data core, 3D, mô phỏng đám đông) + Esri ArcGIS (GIS khu vực quanh sân, dự phòng khi mất mạng)**. Siemens và Bentley đã từng làm chung tại dự án Siemensstadt Square [SIE].
-> 5. Điểm theo từng tiêu chí (mục 3) là **đánh giá định tính Mức C**, dựa trên bằng chứng Mức B. Báo cáo **không cộng điểm theo trọng số** (lý do ở mục 4). **Chưa hãng nào có dữ kiện Mức A.**
+> 5. Điểm theo từng tiêu chí (mục 3) là **đánh giá định tính Mức C**, dựa trên bằng chứng Mức B. **Chưa hãng nào có dữ kiện Mức A.**
 
 ---
 
@@ -212,8 +212,7 @@ flowchart TB
 
 ## 🎯 4. Đánh giá theo kịch bản dự án
 
-> [!NOTE]
-> **Vì sao không cộng điểm theo trọng số:** trọng số do người viết tự đặt theo cảm nhận, không đo được từ dữ kiện. Chỉ cần đổi vài phần trăm là thứ hạng đã đổi, nên con số tổng không cho thêm thông tin thật nào mà còn tạo cảm giác chính xác giả. Thay vào đó, mỗi kịch bản dưới đây xác định những tiêu chí là **điều kiện bắt buộc**, rồi lập luận từ điểm theo từng tiêu chí ở mục 3.
+Mỗi kịch bản dưới đây xác định những tiêu chí là **điều kiện bắt buộc**, rồi lập luận từ điểm theo từng tiêu chí ở mục 3.
 
 ### 4.1. Sân đã có, cần vận hành
 
@@ -319,7 +318,7 @@ Ngày có 60.000–80.000 khán giả, mạng trong sân có thể bị quá t�
 
 ### 7.1. Vai trò phù hợp của từng hãng
 
-Không xếp hạng tổng (lý do ở mục 4). Các hãng được chia thành hai nhóm theo vai trò trong kiến trúc:
+Các hãng được chia thành hai nhóm theo vai trò trong kiến trúc:
 
 | Nhóm | Hãng | Vai trò phù hợp nhất | Lý do chính |
 |---|---|---|---|
